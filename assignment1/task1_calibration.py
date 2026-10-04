@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 
-PATTERN = (7, 7)          # interior corners of an 8x8 chessboard
+PATTERN = (7, 7)         
 MIN_FRAMES = 12
 SQUARE_MM = 7.0           # side of one square on the phone screen, in mm
 SAVE_DIR = "captures"
@@ -52,7 +52,7 @@ while True:
     cv2.imshow("calibration", display)
 
     key = cv2.waitKey(1) & 0xFF
-    if key == 32:                         # SPACE
+    if key == 32:       # space key                  
         if found:
             refined = cv2.cornerSubPix(gray, corners, (11, 11), (-1, -1), criteria)
             imgpoints.append(refined)
