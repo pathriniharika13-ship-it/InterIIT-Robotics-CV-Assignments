@@ -8,8 +8,7 @@ DICT = cv2.aruco.DICT_6X6_250
 params = np.load("camera_params.npz")
 K, D = params["K"], params["D"]
 
-# Marker corners in the marker's own frame (origin at the marker center, Z = 0 plane).
-# Order must match the detector: top-left, top-right, bottom-right, bottom-left.
+
 h = MARKER_MM / 2
 obj_pts = np.array([[-h,  h, 0],
                     [ h,  h, 0],
