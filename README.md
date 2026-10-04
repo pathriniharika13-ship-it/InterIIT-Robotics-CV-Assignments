@@ -16,7 +16,7 @@ K is valid at the resolution it was calibrated at (1280x720).
 - `aruco_3d_pose.py`: loads `camera_params.npz` which were found earlier detects the marker, estimates its pose (R, t) with `solvePnP`, draws a wireframe cube sitting on the marker, and shows the Z distance in cm on the live video.
 
 <img width="385" height="353" alt="image" src="https://github.com/user-attachments/assets/64ec0a15-feb6-4d86-b295-25ccb5f6945e" />
-The
+
 
 
 ## Task 2: Lane detection with CLAHE
@@ -24,6 +24,8 @@ The
 `task2_lane_tracker.py` takes an image path from the terminal:
 
 python task2_lane_tracker.py --path img.png
+
+# The output image
 
 <img width="746" height="556" alt="lane_output" src="https://github.com/user-attachments/assets/1f202bcc-e5a3-44e6-be0d-580ad706a8c4" />
 
