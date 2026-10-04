@@ -2,7 +2,6 @@ import argparse
 import cv2
 import numpy as np
 
-# Settings (tuned for the given image) 
 WORK_W, WORK_H = 746, 556
 INNER_TRIM = (0.004, 0.004, 0.005, 0.007)    # left, top, right, bottom (fractions)
 
